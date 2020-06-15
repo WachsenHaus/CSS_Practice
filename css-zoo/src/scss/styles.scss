@@ -1,0 +1,41 @@
+@import "_variables";
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+
+// /*nav화면입니다.
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 5rem;
+  font-size: 4rem;
+  // background-color: green;
+  width: 100%;
+
+  .nav__container:nth-child(1) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    grid-column: 1/3;
+  }
+  .nav__container:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    grid-column: 3/4;
+  }
+}
+
+main {
+  .main__wrapper {
+  }
+}
