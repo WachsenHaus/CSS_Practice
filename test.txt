@@ -2,7 +2,9 @@
 (쇼핑몰) https://paint-box.com
     https://github.com/nomadcoders/scss-masterclass/commit/f9383037af08c5c2c648d57f6a57ebf5bd1ebd72
 (포트폴리오) 10x19.co
+    https://github.com/nomadcoders/scss-masterclass/commit/b53b062e4858936e23ad2dfc5e5b5c153ca09fb5
 (포트폴리오. 프랑스) http://www.z-o-o.fr/
+
 (쇼핑+포트폴리오. 호주) https://schwartzmedia.com.au
 (쇼핑몰. 덴마크) https://tolv.dk
 (포트폴리오) https://rodicdavidson.co.uk
