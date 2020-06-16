@@ -1,4 +1,55 @@
 @import "_variables";
+:root {
+  --color-white: #ffffff;
+
+  --color-light-white: #eeeeee;
+
+  --color-dark-white: #bdbdbd;
+
+  --color-pink: #fe918d;
+
+  --color-dark-pink: #ff6863;
+
+  --color-dark-grey: #4d4d4d;
+
+  --color-grey: #616161;
+
+  --color-light-grey: #7c7979;
+
+  --color-blue: #73aace;
+
+  --color-yellow: #fff7d1;
+
+  --color-orange: #feb546;
+
+  --color-black: #000000;
+
+  /* Font size */
+
+  --font-large: 4.8rem;
+
+  --font-medium: 2.8rem;
+
+  --font-regular: 1.8rem;
+
+  --font-small: 1.6rem;
+
+  --font-micro: 1.4rem;
+
+  /* Font weight */
+
+  --weight-bold: 700;
+
+  --weight-semi-bold: 600;
+
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 0.4rem;
+
+  /* 애니메이션 */
+  --animation-duration: 250ms;
+}
 
 * {
   box-sizing: border-box;
@@ -55,6 +106,31 @@ header {
         list-style-type: none;
         cursor: pointer;
         margin-right: 50px;
+      }
+    }
+  }
+}
+
+main {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 45vh;
+  article {
+    display: grid;
+    grid-template-rows: 10fr 0.8fr;
+    height: 100%;
+    img {
+      min-width: 100%;
+      height: 100%;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      padding-left: 1rem;
+      h3 {
+        font-size: var(--font-small);
       }
     }
   }
