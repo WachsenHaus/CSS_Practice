@@ -1,0 +1,5 @@
+{
+  "presets": ["@babel/preset-env"]
+  //   이는 플러그인으로. es6문법을 es5로 호환성있게 넓혀주는것을 뜻한다.
+  // 빌드시스템 ( webpack,gulp )과 함께 사용한다.
+}
