@@ -1,0 +1,13 @@
+%abtn {
+  text-decoration: none;
+  color: inherit;
+  border: 0.1rem solid black;
+  padding: 10px 40px;
+  font-weight: 500;
+  border-radius: 99px;
+  transition: background-color 0.2s linear;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}

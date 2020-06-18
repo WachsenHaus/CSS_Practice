@@ -1,0 +1,13 @@
+{
+  "name": "css-movieapp",
+  "description": "",
+  "main": "index.js",
+  "authors": ["bi9choi@naver.com <bi9choi@naver.com>"],
+  "license": "ISC",
+  "homepage": "https://github.com/WachsenHaus/CSS_Practice",
+  "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
+  "dependencies": {
+    "animatewithsass": "^3.2.2",
+    "open-color": "1.7.0"
+  }
+}

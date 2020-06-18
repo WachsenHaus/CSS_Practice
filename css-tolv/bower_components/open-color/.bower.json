@@ -1,0 +1,47 @@
+{
+  "name": "open-color",
+  "description": "Open color scheme for web UI",
+  "main": [
+    "open-color.scss",
+    "open-color.styl",
+    "open-color.less",
+    "open-color.css"
+  ],
+  "authors": [
+    "Jeong Heeyeun <heeyeun.design@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "color",
+    "colorscheme",
+    "swatches",
+    "SCSS",
+    "Less",
+    "Stylus",
+    "CSS"
+  ],
+  "homepage": "https://github.com/yeun/open-color",
+  "ignore": [
+    "docs",
+    "builder",
+    "templates",
+    "builder",
+    "node_modules",
+    "bower_components",
+    "package.json",
+    "CONTRIBUTING.md",
+    "build_release",
+    "**/.*",
+    "*.js"
+  ],
+  "version": "1.7.0",
+  "_release": "1.7.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.7.0",
+    "commit": "b05a634880d90132e20069fd4303043772112e30"
+  },
+  "_source": "https://github.com/yeun/open-color.git",
+  "_target": "1.7.0",
+  "_originalSource": "open-color"
+}
