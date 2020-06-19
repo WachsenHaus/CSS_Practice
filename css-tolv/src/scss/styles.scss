@@ -1,47 +1,74 @@
 @import "bower_components/animatewithsass/animate";
+@import "_headnav";
 
 body {
   font-size: 10px;
 }
-.nav__outerwrapper {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 5vh;
-  .nav__innerWrapper {
-    font-size: 1.2rem;
-    display: flex;
-    width: 90%;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-    ul {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      list-style: none;
-      height: 100%;
-      background-color: red;
-      li {
-        background-color: green;
-        margin-right: 2rem;
-        height: auto;
-        line-height: 2vh;
-        cursor: pointer;
-        &:hover {
-          border-bottom: 1px solid black;
-          @include bounce();
-        }
-      }
+
+nav > .nav-topfixed {
+  font-size: 1rem;
+  z-index: 9999;
+  @include fixedTitle(5rem);
+
+  .nav__menu-flexible {
+    @include ul-flexible;
+  }
+  .nav__logo {
+    font-size: 2rem;
+    div {
+      transform: rotate(-30deg);
+      margin-left: -0.3rem;
     }
-    .logo {
-      display: flex;
-      position: absolute;
-      font-size: inherit;
-      top: 50;
-      left: 50%;
-      margin-left: -0.5rem;
+    @include logo-center(5rem);
+  }
+  .nav__search {
+    @include nav-searchIcon;
+  }
+}
+
+.content__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 100%;
+  .imgColumn {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    img {
+      width: 100%;
+      grid-row: auto;
     }
   }
+  .explanationColumn {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    .text__wrapper-explanation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-row: auto;
+    }
+  }
+}
+
+.content__phrase {
+  .content__phrase__wrapper {
+    background-color: rgba($color: #faee41, $alpha: 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 40rem;
+  }
+}
+.phrase__title {
+  font-size: 2rem;
+}
+.phrase__content {
+  font-size: 2rem;
+  word-break: keep-all;
+  width: 50%;
+  text-align: center;
 }
